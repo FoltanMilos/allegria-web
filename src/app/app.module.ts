@@ -21,6 +21,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import { EmployeesComponent } from './components/employees/employees.component';
 import { TestComponent } from './components/test/test.component';
+import { CallendarComponent } from './components/callendar/callendar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TestComponent } from './components/test/test.component';
     PresentationSlideComponent,
     GalleryComponent,
     EmployeesComponent,
-    TestComponent
+    TestComponent,
+    CallendarComponent
   ],
   imports: [
     BrowserModule,
