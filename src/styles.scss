@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import "~leaflet/dist/leaflet.css";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root {
+  --goldMenu: #F0D7A4;
+  --grayMenu: #374140;
+  --upper-menu-color: #4c4c50;
+  --even-bg: #eee8d3;
+  --odd-bg: #4c4c50;
+  --footerBg: #d1ad8f;
+  --footerBg2: #c2a185;
+  --textBlack: #353535;
+  --whiteBg: #FFFFFF;
+  --lighGoldBg: #f3eadf;
+  --darkBrown: #6B4732;
+  --lightTest: #c6aaa3;
+}
+
+* {
+  font-family: 'Cinzel', serif !important;
+}
+
+.myButton {
+  //box-shadow: 0px 10px 14px -7px #F0D7A4;
+  box-shadow: 0px 10px 14px -7px whitesmoke;
+  //background: var(--footerBg2) linear-gradient(to bottom, var(--footerBg) 5%, var(--footerBg2) 100%);
+  background: whitesmoke linear-gradient(to bottom, var(--footerBg) 5%, whitesmoke 100%);
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:14px;
+  padding:13px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+  background: #e4cfbd linear-gradient(to bottom, #A36F44 5%,#e4cfbd 100%);
+}
+.myButton:active {
+}
+
+//* {
+//  font-size: 0.4rem !important;
+//}
+
+
+
+
+
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+  .bd-placeholder-img-lg {
+    //font-size: 3.5rem;
+  }
+  .content-container {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-container {
+    max-width: 75% !important;
+  }
+  .map {
+    max-width: 75% !important;
+  }
+  .body-container {
+    //border-left: 1px solid black;
+    //border-right: 1px solid black;
+    background-color: var(--whiteBg) !important;
+  }
+}
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: white;
+  //font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  //font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
